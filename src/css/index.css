@@ -16,3 +16,13 @@ video {
     top: 0;
     left: 0;
 }
+
+.hexagons {
+    background-image: url('../images/hexagons.svg');
+    background-size: cover;
+}
+
+.about-us {
+    background-image: url('../images/about.jpg');
+    background-size: cover;
+}

@@ -1,4 +1,6 @@
 import React, { ReactElement } from "react"
+import { StaticImage } from "gatsby-plugin-image"
+
 interface Props {}
 
 function Footer(_props: Props): ReactElement {
@@ -10,18 +12,18 @@ function Footer(_props: Props): ReactElement {
                         href="/"
                         className="block text-gable mb-8 text-4xl tracking-wide font-bold"
                     >
-                        nuclearis
+                        <StaticImage src="../images/logofooter.svg" alt="Nuclearis" placeholder="none" width={150} />
                     </a>
                     <div
                     className="grid grid-cols-12 gap-20 pb-6 mb-4 border-b border-submarine text-submarine"
                     >
                         <div className="mt-auto col-span-5">
-                            <p>General Balcarce 160</p> 
-                            <p>Villa Martelli, Buenos Aires.</p> 
-                            <p>Argentina 1603</p>
+                            <p>Suite 1200. 500 Marquette Av. NW.</p> 
+                            <p>Albuquerque, New Mexico</p> 
+                            <p>USA 87102</p>
                         </div>
                         <div className="col-span-4">
-                            <p>+54 11 5264-2700</p>
+                            <p>+1 505 365-1123</p>
                             <p>info@nuclearis.com</p>
                             <p>rrhh@nuclearis.com</p>
                         </div>
@@ -30,23 +32,23 @@ function Footer(_props: Props): ReactElement {
                             href="https://www.instagram.com/nuclearis.nrs"
                             className="mr-3 inline-block w-6"
                             >
-                            <img src="icons/instagram_dark.svg" alt="instagram"/>
+                                <StaticImage src="../images/instagramdark.svg" placeholder="none" alt="Instagram" />
                             </a>
                             <a
                             href="https://www.facebook.com/nuclearis.nrs"
                             className="mr-3 inline-block w-6"
                             >
-                            <img src="icons/facebook_dark.svg" alt="facebook"/>
+                                <StaticImage src="../images/facebookdark.svg" placeholder="none" alt="Facebook" />
                             </a>
                             <a
                             href="https://www.linkedin.com/company/nuclearis"
                             className="inline-block w-6"
                             >
-                            <img src="icons/linkedin_dark.svg" alt="linkedin"/>
+                                <StaticImage src="../images/linkedindark.svg" placeholder="none" alt="Linkedin" />
                             </a>
                         </div>
                     </div>
-                    <p className="text-submarine">© 2021. Nuclearis. NRS, S.A. - Todos los derechos reservados.</p>
+                    <p className="text-submarine">© 2021. Nuclearis CORP - Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>
