@@ -26,25 +26,25 @@ const MobileHeader = (_props: Props): ReactElement =>  {
                             Home
                         </a>
                         <a
-                            href="about"
+                            href="/about"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             About Us
                         </a>
                         <a
-                            href="services"
+                            href="/services"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             Services
                         </a>
                         <a
-                            href="works"
+                            href="/works"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             Works
                         </a>
                         <a
-                            href="contact"
+                            href="/contact"
                             className="inline-block hover:text-pelorous"
                         >
                             Contact Us
