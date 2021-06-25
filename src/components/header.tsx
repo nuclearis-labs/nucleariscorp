@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import  { Link } from "gatsby"
 
 interface Props {hasBackground: Boolean}
 
@@ -9,46 +10,46 @@ const MobileHeader = (_props: Props): ReactElement =>  {
             <nav>
                 <div className="flex w-full max-w-6xl m-auto py-7 px-8">
                 <div className="flex-auto text-white mb-2">
-                    <a
-                        href="/"
+                    <Link
+                        to="/"
                     >
                         <StaticImage src="../images/logo.svg" alt="Nuclearis" placeholder="none" width={150} />
-                    </a>
+                    </Link>
                 </div>
                 <div
                     className="flex-auto text-right"
                 >
                     <div className="text-xs text-white font-bold tracking-wide uppercase mt-3">
-                        <a
-                            href="/"
+                        <Link
+                            to="/"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             Home
-                        </a>
-                        <a
-                            href="/about"
+                        </Link>
+                        <Link
+                            to="/about"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             About Us
-                        </a>
-                        <a
-                            href="/services"
+                        </Link>
+                        <Link
+                            to="/services"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             Services
-                        </a>
-                        <a
-                            href="/works"
+                        </Link>
+                        <Link
+                            to="/works"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
                             Works
-                        </a>
-                        <a
-                            href="/contact"
+                        </Link>
+                        <Link
+                            to="/contact"
                             className="inline-block hover:text-pelorous"
                         >
                             Contact Us
-                        </a>
+                        </Link>
                         {!_props.hasBackground && <>
                             <a
                                 href="https://www.instagram.com/nuclearis.nrs"
