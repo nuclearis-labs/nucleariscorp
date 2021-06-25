@@ -2,6 +2,7 @@ import React, { ReactElement } from "react"
 import Header from "../components/header"
 import Cookies from "../components/cookies"
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 interface Props {
   data: any
@@ -12,6 +13,7 @@ function Index(_props: Props): ReactElement {
   const videoPoster = _props.data.videoPoster.publicURL
   return (
     <>
+      <Helmet title="Nuclearis Corporation" />
       <Header hasBackground={false}/>
       <video playsInline autoPlay muted loop poster={videoPoster} id="bgvid">
         <source src={videoMP4} type="video/mp4"/>
