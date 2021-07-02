@@ -42,7 +42,7 @@ const MobileHeader = (_props: Props): ReactElement =>  {
                             to="/works"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
-                            Works
+                            Our Work
                         </Link>
                         <Link
                             to="/contact"
@@ -116,7 +116,7 @@ const DesktopHeader = (_props: Props): ReactElement => {
                             href="works"
                             className="mr-9 inline-block hover:text-pelorous"
                         >
-                            Works
+                            Our Work
                         </a>
                         <a
                             href="contact"
