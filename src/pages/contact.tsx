@@ -1,10 +1,11 @@
 import React, { ReactElement } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import { StaticImage } from "gatsby-plugin-image"
 
 interface Props {}
 
-function About(_props: Props): ReactElement {
+function Contact(_props: Props): ReactElement {
   return (
     <>
       <Header hasBackground={true} />
@@ -42,40 +43,8 @@ function About(_props: Props): ReactElement {
               Send
             </button>
           </div>
-          <div className="col-span-6"></div>
-        </div>
-      </div>
-      <div className="w-full bg-pattens-blue">
-        <div className="max-w-6xl m-auto px-8">
-          <div className="grid grid-cols-12 py-20">
-            <div className="col-span-4 leading-tight">
-              <h3 className="font-bold text-pelorous">Oficinas Corporativas</h3>
-              <p className="text-gable">General Balcarce 160</p>
-              <p className="text-gable">Villa Martelli, Buenos Aires.</p>
-              <p className="text-gable">Argentina 1603</p>
-              <p className="text-gable">Teléfono +54 11 5263-2700</p>
-              <p className="text-gable">Fax +54 11 5263-2701</p>
-              <p className="text-gable">info@nuclearis.com</p>
-            </div>
-            <div className="col-span-4 leading-tight border-gable border-r border-l pl-14">
-              <h3 className="font-bold text-pelorous">
-                Oficinas Comerciales USA
-              </h3>
-              <p className="text-gable">Suite 1200. 500 Marquette Av. NW.</p>
-              <p className="text-gable">Albuquerque, Nuevo México</p>
-              <p className="text-gable">USA 87102</p>
-              <p className="text-gable">Teléfono +1 505 365-1123</p>
-            </div>
-            <div className="col-span-4 leading-tight pl-14">
-              <h3 className="font-bold text-pelorous">
-                Oficinas Comerciales en China
-              </h3>
-              <p className="text-gable">1-3/F Shanghai Base Fuxing.</p>
-              <p className="text-gable">569 Xizang Road</p>
-              <p className="text-gable">Huangpu Distric, Shanghai.</p>
-              <p className="text-gable">China 201100</p>
-              <p className="text-gable">Teléfono +86 21 615-77465</p>
-            </div>
+          <div className="col-span-6 pt-16 px-20">
+            <StaticImage src="../images/usa.svg" alt="USA" />
           </div>
         </div>
       </div>
@@ -84,4 +53,4 @@ function About(_props: Props): ReactElement {
   )
 }
 
-export default About
+export default Contact
