@@ -9,9 +9,9 @@ function About(_props: Props): ReactElement {
   return (
     <>
       <Header hasBackground={true} />
-      <div className="w-full max-w-6xl m-auto pt-20 pb-14 px-8">
+      <div className="w-full max-w-6xl m-auto pt-20 px-8">
         <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-7">
+          <div className="col-span-7 pb-14">
             <h1 className="font-bold text-3xl mb-6 text-gable tracking-wide">
               About us
             </h1>
@@ -28,7 +28,7 @@ function About(_props: Props): ReactElement {
               tecnología involucrada.
             </p>
           </div>
-          <div className="col-span-5"></div>
+          <div className="col-span-5 hexagon"></div>
         </div>
       </div>
       <div className="w-full bg-pattens-blue">

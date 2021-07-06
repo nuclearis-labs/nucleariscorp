@@ -26,3 +26,10 @@ video {
   background-image: url("../images/about.jpg");
   background-size: cover;
 }
+
+.hexagon {
+  background-image: url("../images/hexagon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
