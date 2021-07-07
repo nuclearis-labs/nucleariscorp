@@ -15,33 +15,53 @@ function Contact(_props: Props): ReactElement {
             <h1 className="font-bold text-3xl mb-5 text-gable tracking-wide">
               Contact Us
             </h1>
-            <input
-              className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
-              type="text"
-              placeholder="Firstname"
-            />
-            <input
-              className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
-              type="text"
-              placeholder="Email"
-            />
-            <input
-              className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
-              type="text"
-              placeholder="Company (optional)"
-            />
-            <input
-              className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
-              type="text"
-              placeholder="Phone"
-            />
-            <textarea
-              className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2 h-28"
-              placeholder="Message"
-            ></textarea>
-            <button className="bg-pelorous px-7 py-2 text-white tracking-wide hover:bg-gable">
-              Send
-            </button>
+            <form
+              action="https://nuclearis.us7.list-manage.com/subscribe/post?u=e585a2414f24a8ee147a6c478&amp;id=7d7872dd3e"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              target="_blank"
+            >
+              <input
+                className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
+                type="text"
+                placeholder="* Name"
+                name="NAME"
+                required
+              />
+              <input
+                className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
+                type="text"
+                placeholder="* Email"
+                name="EMAIL"
+                required
+              />
+              <input
+                className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
+                type="text"
+                name="COMPANY"
+                placeholder="Company"
+              />
+              <input
+                className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
+                type="text"
+                name="PHONE"
+                placeholder="* Phone"
+                required
+              />
+              <textarea
+                className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2 h-28"
+                placeholder="* Message"
+                name="MESSAGE"
+                required
+              ></textarea>
+              <input
+              type="submit"
+              id="submit-button"
+              className="bg-pelorous px-7 py-2 text-white tracking-wide hover:bg-gable"
+              value="Send"
+              />
+            </form>
           </div>
           <div className="col-span-6 pt-16 px-20">
             <StaticImage src="../images/usa.svg" alt="USA" />
