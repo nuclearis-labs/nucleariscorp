@@ -46,8 +46,7 @@ function Contact(_props: Props): ReactElement {
                 className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2"
                 type="text"
                 name="PHONE"
-                placeholder="* Phone"
-                required
+                placeholder="Phone"
               />
               <textarea
                 className="w-full block bg-zircon placeholder-gable mb-5 px-3 py-2 h-28"
