@@ -10,11 +10,11 @@ interface Props {
 }
 
 type Work = {
-  id: string;
-  title: string;
-  shortText: string;
-  overlayText: string;
-  fullText: string;
+  id: string
+  title: string
+  shortText: string
+  overlayText: string
+  fullText: string
 }
 
 function Works(_props: Props): ReactElement {
@@ -55,25 +55,26 @@ function Works(_props: Props): ReactElement {
           <h1 className="font-bold text-3xl mb-7 text-gable tracking-wide">
             Our Work
           </h1>
-          {expandedWork && 
-          <div className='text-right'>
-            <h1 className="inline-block font-normal text-2xl mt-2 text-gable tracking-wide">
-              {expandedWork.title}
-            </h1>
-            <button
-            className="inline-block ml-4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all"
-            onClick={() => compressWork()}
-            >
-              <StaticImage
-                src="../images/close.svg"
-                alt="Close"
-                placeholder="none"
-                width={18}
-              />
-            </button>
-          </div>}
+          {expandedWork && (
+            <div className="text-right">
+              <h1 className="inline-block font-normal text-2xl mt-2 text-gable tracking-wide">
+                {expandedWork.title}
+              </h1>
+              <button
+                className="inline-block ml-4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all"
+                onClick={() => compressWork()}
+              >
+                <StaticImage
+                  src="../images/close.svg"
+                  alt="Close"
+                  placeholder="none"
+                  width={18}
+                />
+              </button>
+            </div>
+          )}
         </div>
-        
+
         <div className="grid grid-cols-12">
           {expandedWork && (
             <div className="col-span-12 text-center relative">
@@ -86,7 +87,9 @@ function Works(_props: Props): ReactElement {
                 alt={expandedWork.shortText}
               />
               <button
-                className={`${showAllText ? 'hidden' : ''} absolute top-1/3 left-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
+                className={`${
+                  showAllText ? "hidden" : ""
+                } absolute top-1/3 left-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
                 onClick={() => changeWorkSlide("previous")}
               >
                 <StaticImage
@@ -97,7 +100,9 @@ function Works(_props: Props): ReactElement {
                 />
               </button>
               <button
-                className={`${showAllText ? 'hidden' : ''} absolute top-1/3 right-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
+                className={`${
+                  showAllText ? "hidden" : ""
+                } absolute top-1/3 right-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
                 onClick={() => changeWorkSlide("next")}
               >
                 <StaticImage
@@ -107,17 +112,33 @@ function Works(_props: Props): ReactElement {
                   width={40}
                 />
               </button>
-              <div onMouseLeave={()=> setShowAllText(false)} className={`absolute ${showAllText ? 'top-0' : 'top-2/3'} transition-all right-0 left-0 bottom-0 bg-black block bg-opacity-70`}>
+              <div
+                onMouseLeave={() => setShowAllText(false)}
+                className={`absolute ${
+                  showAllText ? "top-0" : "top-2/3"
+                } transition-all right-0 left-0 bottom-0 bg-black block bg-opacity-70`}
+              >
                 <div className="absolute top-10 left-1/2 transform -translate-x-2/4 w-4/5">
                   <p
                     className="text-white text-justify text-md font-light"
                     dangerouslySetInnerHTML={{
-                      __html: showAllText ? expandedWork.fullText : expandedWork.overlayText
+                      __html: showAllText
+                        ? expandedWork.fullText
+                        : expandedWork.overlayText,
                     }}
                   />
-                  {!showAllText ? <div className='text-right'>
-                    <button className='text-white font-bold' onMouseOver={()=> setShowAllText(true)}>Read more</button>
-                  </div> : <></>}
+                  {!showAllText ? (
+                    <div className="text-right">
+                      <button
+                        className="text-white font-bold"
+                        onMouseOver={() => setShowAllText(true)}
+                      >
+                        Read more
+                      </button>
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
             </div>

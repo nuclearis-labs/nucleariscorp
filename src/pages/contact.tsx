@@ -55,10 +55,10 @@ function Contact(_props: Props): ReactElement {
                 required
               ></textarea>
               <input
-              type="submit"
-              id="submit-button"
-              className="bg-pelorous px-7 py-2 text-white tracking-wide hover:bg-gable"
-              value="Send"
+                type="submit"
+                id="submit-button"
+                className="bg-pelorous px-7 py-2 text-white tracking-wide hover:bg-gable"
+                value="Send"
               />
             </form>
           </div>

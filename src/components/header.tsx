@@ -117,15 +117,22 @@ const DesktopHeader = (_props: Props): ReactElement => {
               <Link to="/" className="mr-9 inline-block hover:text-pelorous">
                 Home
               </Link>
-              <Link to="/about" className="mr-9 inline-block hover:text-pelorous">
+              <Link
+                to="/about"
+                className="mr-9 inline-block hover:text-pelorous"
+              >
                 About Us
               </Link>
-              <Link to="/services"
+              <Link
+                to="/services"
                 className="mr-9 inline-block hover:text-pelorous"
               >
                 Services
               </Link>
-              <Link to="/works" className="mr-9 inline-block hover:text-pelorous">
+              <Link
+                to="/works"
+                className="mr-9 inline-block hover:text-pelorous"
+              >
                 Our Work
               </Link>
               <Link to="/contact" className="inline-block hover:text-pelorous">
