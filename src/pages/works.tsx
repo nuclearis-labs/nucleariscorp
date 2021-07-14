@@ -50,7 +50,7 @@ function Works(_props: Props): ReactElement {
   return (
     <>
       <Header hasBackground={true} />
-      <div className="w-full max-w-6xl m-auto py-20 px-8">
+      <div className="w-full max-w-5xl m-auto py-20 px-8">
         <div className="grid grid-cols-2">
           <h1 className="font-bold text-3xl mb-7 text-gable tracking-wide">
             Our Work
@@ -110,7 +110,7 @@ function Works(_props: Props): ReactElement {
               <div onMouseLeave={()=> setShowAllText(false)} className={`absolute ${showAllText ? 'top-0' : 'top-2/3'} transition-all right-0 left-0 bottom-0 bg-black block bg-opacity-70`}>
                 <div className="absolute top-10 left-1/2 transform -translate-x-2/4 w-4/5">
                   <p
-                    className="text-white text-justify text-xl font-light"
+                    className="text-white text-justify text-md font-light"
                     dangerouslySetInnerHTML={{
                       __html: showAllText ? expandedWork.fullText : expandedWork.overlayText
                     }}

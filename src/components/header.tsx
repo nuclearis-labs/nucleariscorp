@@ -101,7 +101,7 @@ const DesktopHeader = (_props: Props): ReactElement => {
       }`}
     >
       <nav>
-        <div className="flex w-full max-w-6xl m-auto py-7 px-8">
+        <div className="flex w-full max-w-5xl m-auto py-7 px-8">
           <div className="flex-auto text-white mb-2">
             <a href="/">
               <StaticImage
