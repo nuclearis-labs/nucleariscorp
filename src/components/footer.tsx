@@ -21,9 +21,9 @@ function Footer(_props: Props): ReactElement {
           </a>
           <div className="grid grid-cols-12 gap-20 pb-6 mb-4 border-b border-submarine text-submarine">
             <div className="mt-auto col-span-5">
-              <p>Suite 1200. 500 Marquette Av. NW.</p>
+              <p>7620 Jefferson St NE, Suite 7</p>
               <p>Albuquerque, New Mexico</p>
-              <p>USA 87102</p>
+              <p>USA 87109</p>
             </div>
             <div className="col-span-4">
               <p>+1 505 365-1123</p>
