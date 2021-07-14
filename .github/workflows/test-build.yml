@@ -3,7 +3,7 @@ name: Gatsby Publish
 on:
   pull_request:
     branches:
-      - staging
+      - master 
 
 jobs:
   build:
@@ -13,4 +13,5 @@ jobs:
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages
           skip-publish: true
