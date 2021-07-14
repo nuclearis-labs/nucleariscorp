@@ -18,7 +18,7 @@ function Services(_props: Props): ReactElement {
             <h1 className="font-bold text-5xl mb-7 pr-32 text-gable tracking-wide">
               Building creative products, activating ideas and growing companies
             </h1>
-            <p className="pr-40 mb-7">
+            <p className="pr-40 mb-7 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -27,7 +27,7 @@ function Services(_props: Props): ReactElement {
             <h1 className="font-bold text-3xl mb-1 text-gable tracking-wide">
               Fabricación de componentes
             </h1>
-            <p className="mb-6 pr-20">
+            <p className="mb-6 pr-20 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -36,7 +36,7 @@ function Services(_props: Props): ReactElement {
             <h1 className="font-bold text-3xl mb-1 text-gable tracking-wide">
               Ingeniería
             </h1>
-            <p className="pr-20">
+            <p className="pr-20 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

@@ -19,7 +19,7 @@ function About(_props: Props): ReactElement {
               Nuclearis es una empresa argentina dedicada a la ingeniería y
               fabricación de componentes mecánicos para la industria nuclear
             </h2>
-            <p className="text-gable">
+            <p className="text-gable text-justify">
               La compañía fue creada en 2009 para abastecer de componentes
               mecánicos de precisión para las Centrales Atómicas Atucha I,
               Atucha II y Embalse de la República Argentina. Desde entonces
@@ -41,7 +41,7 @@ function About(_props: Props): ReactElement {
               <h3 className="text-2xl mb-4 text-gable tracking-wide">
                 Actualmente
               </h3>
-              <p className="text-gable pr-10">
+              <p className="text-gable pr-10 text-justify">
                 <span className="font-bold">Material Organization.</span>{" "}
                 Actualmente Nuclearis se encuentra en un nuevo proyecto de
                 expansión a partir de la creación de una nueva unidad de
