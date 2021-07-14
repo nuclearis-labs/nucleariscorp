@@ -114,24 +114,23 @@ const DesktopHeader = (_props: Props): ReactElement => {
           </div>
           <div className="flex-auto text-right">
             <div className="text-xs text-white font-bold tracking-wide uppercase mt-3">
-              <a href="/" className="mr-9 inline-block hover:text-pelorous">
+              <Link to="/" className="mr-9 inline-block hover:text-pelorous">
                 Home
-              </a>
-              <a href="about" className="mr-9 inline-block hover:text-pelorous">
+              </Link>
+              <Link to="/about" className="mr-9 inline-block hover:text-pelorous">
                 About Us
-              </a>
-              <a
-                href="services"
+              </Link>
+              <Link to="/services"
                 className="mr-9 inline-block hover:text-pelorous"
               >
                 Services
-              </a>
-              <a href="works" className="mr-9 inline-block hover:text-pelorous">
+              </Link>
+              <Link to="/works" className="mr-9 inline-block hover:text-pelorous">
                 Our Work
-              </a>
-              <a href="contact" className="inline-block hover:text-pelorous">
+              </Link>
+              <Link to="/contact" className="inline-block hover:text-pelorous">
                 Contact Us
-              </a>
+              </Link>
               {!_props.hasBackground && (
                 <>
                   <a
