@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { graphql } from "gatsby"
-import worksContent from "./worksContent.json"
+import worksContent from "./worksContent.js"
 import { StaticImage } from "gatsby-plugin-image"
 
 interface Props {
@@ -157,7 +157,7 @@ function Works(_props: Props): ReactElement {
                     />
                     <div className="absolute top-0 right-0 left-0 bottom-0 bg-black opacity-0 block transition-all bg-opacity-50 hover:opacity-100">
                       <div className="absolute top-1/2 left-1/2 transform w-full text-center -translate-y-2/4 -translate-x-2/4">
-                        <h2 className="text-pelorous font-bold text-2xl mb-2">
+                        <h2 className="text-pelorous font-bold text-xl mb-2">
                           {work.title}
                         </h2>
                         <p className="text-white">{work.shortText}</p>
