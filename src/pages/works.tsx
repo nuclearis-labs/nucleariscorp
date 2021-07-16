@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { graphql } from "gatsby"
-import worksContent from "./worksContent.js"
+import worksContent from "../content/works.js"
 import { StaticImage } from "gatsby-plugin-image"
 
 interface Props {
