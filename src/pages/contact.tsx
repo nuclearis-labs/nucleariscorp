@@ -8,10 +8,10 @@ interface Props {}
 function Contact(_props: Props): ReactElement {
   return (
     <>
-      <Header hasBackground={true} />
-      <div className="w-full max-w-6xl m-auto py-20 px-8">
-        <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-6">
+      <Header isLanding={false} />
+      <div className="w-full max-w-5xl m-auto py-20 px-8">
+        <div className="grid grid-cols-12 sm:gap-10">
+          <div className="col-span-12 sm:col-start-3 sm:col-span-8 md:col-span-6">
             <h1 className="font-bold text-3xl mb-5 text-gable tracking-wide">
               Contact Us
             </h1>
@@ -62,7 +62,7 @@ function Contact(_props: Props): ReactElement {
               />
             </form>
           </div>
-          <div className="col-span-6 pt-16 px-20">
+          <div className="col-span-6 pt-16 px-0 lg:px-20 hidden md:block">
             <StaticImage src="../images/usa.svg" alt="USA" />
           </div>
         </div>

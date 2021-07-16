@@ -14,14 +14,14 @@ function Index(_props: Props): ReactElement {
   return (
     <>
       <Helmet title="Nuclearis Corporation" />
-      <Header hasBackground={false} />
+      <Header isLanding={true} />
       <video playsInline autoPlay muted loop poster={videoPoster} id="bgvid">
         <source src={videoMP4} type="video/mp4" />
       </video>
       <div className="absolute top-1/4 w-full">
-        <div className="max-w-6xl m-auto px-8">
+        <div className="max-w-5xl m-auto px-8">
           <div className="grid grid-cols-12">
-            <div className="col-start-2 col-span-10 sm:col-start-3 sm:col-span-8 md:col-start-4 md:col-span-6 lg:col-start-7 lg:col-span-5 2xl:col-start-7 2xl:col-span-6">
+            <div className="col-start-2 col-span-10 sm:col-start-3 sm:col-span-8 md:col-start-4 md:col-span-6 lg:col-start-8 lg:col-span-5 2xl:col-start-7 2xl:col-span-6">
               <h1 className="text-white font-light tracking-wide mb-8 text-center text-2xl 2xl:text-3xl lg:text-justify">
                 Nuclearis Corp provides engineering solutions and project
                 management to support the{" "}
@@ -35,7 +35,7 @@ function Index(_props: Props): ReactElement {
       <div className="absolute bottom-0 h-auto block w-full">
         <div className="max-w-6xl m-auto px-8">
           <div className="grid grid-cols-12">
-            <div className="lg:col-start-7 lg:col-span-5 lg:h-72 2xl:col-start-7 2xl:col-span-6 2xl:h-96 hexagons"></div>
+            <div className="lg:col-start-8 lg:col-span-5 lg:h-72 2xl:col-start-7 2xl:col-span-6 2xl:h-96 hexagons"></div>
           </div>
         </div>
       </div>
