@@ -23,12 +23,7 @@ function Index(_props: Props): ReactElement {
           <div className="grid grid-cols-12">
             <div className="col-start-2 col-span-10 sm:col-start-3 sm:col-span-8 md:col-start-4 md:col-span-6 lg:col-start-7 lg:col-span-5 2xl:col-start-7 2xl:col-span-6">
               <h1 className="text-white font-light tracking-wide mb-8 text-center text-2xl 2xl:text-3xl lg:text-justify">
-                Nuclearis Corp is a company in the nuclear industry, dedicated
-                to the engineering design of mechanical{" "}
-                <b className="font-bold">
-                  components and project management with outsourcing
-                  capabilities.
-                </b>
+                Nuclearis Corp provides engineering solutions and project management to support the <span className="font-bold">nuclear industry.</span>{" "}
               </h1>
               <span className="bg-white h-1 w-8 block m-auto lg:m-0"></span>
             </div>

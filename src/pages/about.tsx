@@ -16,16 +16,13 @@ function About(_props: Props): ReactElement {
               About us
             </h1>
             <h2 className="font-bold text-4xl text-gable tracking-wide mb-4">
-              Nuclearis es una empresa argentina dedicada a la ingeniería y
-              fabricación de componentes mecánicos para la industria nuclear
+              Nuclearis Corp is a US company established in 2018 in Albuquerque, New Mexico. 
             </h2>
+            <p className="text-gable text-justify mb-4">
+              We deliver engineered turnkey solutions to support nuclear utilities and laboratories for both plant operations and refurbishment projects. The company has a solid professional young team with a background in process automation, design, simulation, and manufacturing of mechanical components and devices for the nuclear industry.
+            </p>
             <p className="text-gable text-justify">
-              La compañía fue creada en 2009 para abastecer de componentes
-              mecánicos de precisión para las Centrales Atómicas Atucha I,
-              Atucha II y Embalse de la República Argentina. Desde entonces
-              Nuclearis ha suministrado dichos componentes ininterrumpidamente y
-              sin rechazos, demostrando la robustez y eficiencia de la
-              tecnología involucrada.
+              We are passionate about complex technology challenges and we approach them with professionalism to deliver state of the art solutions for our customers.
             </p>
           </div>
           <div className="col-span-5 hexagon"></div>
