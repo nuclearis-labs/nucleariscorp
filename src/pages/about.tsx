@@ -16,13 +16,21 @@ function About(_props: Props): ReactElement {
               About us
             </h1>
             <h2 className="font-bold text-4xl text-gable tracking-wide mb-4">
-              Nuclearis Corp is a US company established in 2018 in Albuquerque, New Mexico. 
+              Nuclearis Corp is a US company established in 2018 in Albuquerque,
+              New Mexico.
             </h2>
             <p className="text-gable text-justify mb-4">
-              We deliver engineered turnkey solutions to support nuclear utilities and laboratories for both plant operations and refurbishment projects. The company has a solid professional young team with a background in process automation, design, simulation, and manufacturing of mechanical components and devices for the nuclear industry.
+              We deliver engineered turnkey solutions to support nuclear
+              utilities and laboratories for both plant operations and
+              refurbishment projects. The company has a solid professional young
+              team with a background in process automation, design, simulation,
+              and manufacturing of mechanical components and devices for the
+              nuclear industry.
             </p>
             <p className="text-gable text-justify">
-              We are passionate about complex technology challenges and we approach them with professionalism to deliver state of the art solutions for our customers.
+              We are passionate about complex technology challenges and we
+              approach them with professionalism to deliver state of the art
+              solutions for our customers.
             </p>
           </div>
           <div className="col-span-5 hexagon"></div>

@@ -16,16 +16,15 @@ function Services(_props: Props): ReactElement {
               Services
             </h1>
             <h1 className="font-bold text-4xl mb-7 pr-32 text-gable tracking-wide">
-              We have a solid background providing support to nuclear facilities including nuclear power plants, SMR and Laboratories.
+              We have a solid background providing support to nuclear facilities
+              including nuclear power plants, SMR and Laboratories.
             </h1>
-            <p className="pr-40 mb-7 text-justify">
-              Our expertise covers:
-            </p>
+            <p className="pr-40 mb-7 text-justify">Our expertise covers:</p>
             <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
               ENGINEERING
             </h1>
             <p className="mb-6 pr-20 text-justify">
-              1. Basic and detailed engineering 
+              1. Basic and detailed engineering
             </p>
 
             <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
@@ -44,15 +43,14 @@ function Services(_props: Props): ReactElement {
             <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
               FABRICATION
             </h1>
-            <p className="mb-6 pr-20 text-justify">
-              5. Equipment automation 
-            </p>
-          
+            <p className="mb-6 pr-20 text-justify">5. Equipment automation</p>
+
             <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
               PROJECT MANAGEMENT
             </h1>
             <p className="mb-6 pr-20 text-justify">
-              6. Design, fabrication and equipment installation of special mechanical components 
+              6. Design, fabrication and equipment installation of special
+              mechanical components
             </p>
           </div>
           <div className="col-span-4">
