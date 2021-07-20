@@ -8,10 +8,10 @@ interface Props {}
 function Services(_props: Props): ReactElement {
   return (
     <>
-      <Header hasBackground={true} />
-      <div className="w-full max-w-6xl m-auto py-20 px-8">
+      <Header isLanding={false} />
+      <div className="w-full max-w-5xl m-auto py-20 px-8">
         <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-8">
+          <div className="col-span-12 sm:col-span-8">
             <h1 className="font-bold text-3xl mb-7 text-gable tracking-wide">
               Services
             </h1>
@@ -53,7 +53,7 @@ function Services(_props: Props): ReactElement {
               mechanical components
             </p>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-4 hidden sm:block">
             <StaticImage src="../images/services.jpg" alt="Services" />
           </div>
         </div>

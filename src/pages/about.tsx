@@ -8,10 +8,10 @@ interface Props {}
 function About(_props: Props): ReactElement {
   return (
     <>
-      <Header hasBackground={true} />
+      <Header isLanding={false} />
       <div className="w-full max-w-6xl m-auto pt-20 px-8">
-        <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-7 pb-14">
+        <div className="grid grid-cols-12 sm:gap-10">
+          <div className="col-span-12 sm:col-span-7 pb-14">
             <h1 className="font-bold text-3xl mb-6 text-gable tracking-wide">
               About us
             </h1>
