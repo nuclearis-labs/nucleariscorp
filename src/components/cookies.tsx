@@ -3,13 +3,14 @@ import React, { ReactElement, useState } from "react"
 interface Props {}
 
 function Cookies(_props: Props): ReactElement {
-  const [isDialogOpen, setDialogOpen] = useState(() => true)
+  const [cookiesAllowed, setCookiesAllowed] = useState(() => Boolean(window.localStorage.getItem("allow-cookies")))
   const closeDialog = () => {
-    setDialogOpen(false)
+    setCookiesAllowed(true)
+    window.localStorage.setItem("allow-cookies", "true");
   }
   return (
     <>
-      {isDialogOpen && (
+      {!cookiesAllowed && (
         <div className="fixed bottom-0 w-full bg-pelorous py-3 px-8 text-center">
           <p className="text-white text-sm">
             <span>
