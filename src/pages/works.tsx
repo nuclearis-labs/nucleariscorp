@@ -49,15 +49,15 @@ function Works(_props: Props): ReactElement {
 
   return (
     <>
-      <Header hasBackground={true} />
+      <Header isLanding={false} />
       <div className="w-full max-w-5xl m-auto py-20 px-8">
-        <div className="grid grid-cols-2">
-          <h1 className="font-bold text-3xl mb-7 text-gable tracking-wide">
+        <div className="grid grid-cols-12">
+          <h1 className="font-bold col-span-5 text-3xl mb-7 text-gable tracking-wide">
             Our Work
           </h1>
           {expandedWork && (
-            <div className="text-right">
-              <h1 className="inline-block font-normal text-2xl mt-2 text-gable tracking-wide">
+            <div className="text-right col-span-7">
+              <h1 className="inline-block font-normal text-base sm:text-lg md:text-2xl mt-2 text-gable tracking-wide">
                 {expandedWork.title}
               </h1>
               <button
@@ -68,7 +68,7 @@ function Works(_props: Props): ReactElement {
                   src="../images/close.svg"
                   alt="Close"
                   placeholder="none"
-                  width={18}
+                  width={17}
                 />
               </button>
             </div>
@@ -77,6 +77,7 @@ function Works(_props: Props): ReactElement {
 
         <div className="grid grid-cols-12">
           {expandedWork && (
+            <>
             <div className="col-span-12 text-center relative">
               <img
                 className="w-full"
@@ -89,7 +90,7 @@ function Works(_props: Props): ReactElement {
               <button
                 className={`${
                   showAllText ? "hidden" : ""
-                } absolute top-1/3 left-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
+                } absolute top-1/2 md:top-1/3 left-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
                 onClick={() => changeWorkSlide("previous")}
               >
                 <StaticImage
@@ -102,7 +103,7 @@ function Works(_props: Props): ReactElement {
               <button
                 className={`${
                   showAllText ? "hidden" : ""
-                } absolute top-1/3 right-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
+                } absolute top-1/2 md:top-1/3 right-8 transform -translate-y-2/4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all`}
                 onClick={() => changeWorkSlide("next")}
               >
                 <StaticImage
@@ -114,13 +115,13 @@ function Works(_props: Props): ReactElement {
               </button>
               <div
                 onMouseLeave={() => setShowAllText(false)}
-                className={`absolute ${
+                className={`hidden md:block absolute ${
                   showAllText ? "top-0" : "top-2/3"
                 } transition-all right-0 left-0 bottom-0 bg-black block bg-opacity-70`}
               >
-                <div className="absolute top-10 left-1/2 transform -translate-x-2/4 w-4/5">
+                <div className="absolute top-10 left-1/2 transform -translate-x-2/4 w-11/12">
                   <p
-                    className="text-white text-justify text-md font-light"
+                    className="text-sm md:text-sm lg:text-base text-white text-justify font-light"
                     dangerouslySetInnerHTML={{
                       __html: showAllText
                         ? expandedWork.fullText
@@ -130,7 +131,7 @@ function Works(_props: Props): ReactElement {
                   {!showAllText ? (
                     <div className="text-right">
                       <button
-                        className="text-white font-bold"
+                        className="text-sm md:text-sm lg:text-base text-white font-bold"
                         onMouseOver={() => setShowAllText(true)}
                       >
                         Read more
@@ -142,12 +143,21 @@ function Works(_props: Props): ReactElement {
                 </div>
               </div>
             </div>
+            <div className="block md:hidden col-span-12 text-justify relative">
+              <p
+                className="text-base mt-10 text-gable text-justify font-light"
+                dangerouslySetInnerHTML={{
+                  __html: expandedWork.fullText
+                }}
+              />
+            </div>
+            </>
           )}
           {!expandedWork &&
             worksContent.map((work: Work, index: number) => {
               return (
                 <React.Fragment key={index}>
-                  <div className="col-span-4 relative">
+                  <div className="col-span-12 sm:col-span-6 md:col-span-4 relative">
                     <img
                       src={
                         _props.data[work.id].edges[0].node.childImageSharp.fluid
