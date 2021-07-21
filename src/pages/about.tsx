@@ -39,14 +39,14 @@ function About(_props: Props): ReactElement {
       <div className="w-full bg-pattens-blue">
         <div className="max-w-6xl m-auto px-8">
           <div className="grid grid-cols-12 gap-1">
-            <div className="col-span-6 pt-7 pb-12 relative">
+            <div className="col-span-12 sm:col-span-6 pt-7 pb-12 relative">
               <h2 className="font-bold text-3xl mb-1 text-gable tracking-wide">
                 Trayectoria
               </h2>
               <h3 className="text-2xl mb-4 text-gable tracking-wide">
                 Actualmente
               </h3>
-              <p className="text-gable pr-10 text-justify">
+              <p className="text-gable sm:pr-10 text-justify">
                 <span className="font-bold">Material Organization.</span>{" "}
                 Actualmente Nuclearis se encuentra en un nuevo proyecto de
                 expansión a partir de la creación de una nueva unidad de
@@ -57,7 +57,7 @@ function About(_props: Props): ReactElement {
                 fabricación y provisión de los mismos estén de acuerdo al ASME
                 BPVC, Section III, NCA-3800.
               </p>
-              <div className="absolute bottom-5 right-10">
+              <div className="absolute bottom-5 right-0 sm:right-10">
                 <button className="focus:outline-none">
                   <StaticImage
                     src="../images/left-arrow.svg"
@@ -74,7 +74,7 @@ function About(_props: Props): ReactElement {
                 </button>
               </div>
             </div>
-            <div className="col-span-6 about-us"></div>
+            <div className="sm:col-span-6 about-us hidden sm:block"></div>
           </div>
         </div>
       </div>
