@@ -3,10 +3,12 @@ import React, { ReactElement, useState } from "react"
 interface Props {}
 
 function Cookies(_props: Props): ReactElement {
-  const [cookiesAllowed, setCookiesAllowed] = useState(() => Boolean(localStorage.getItem("allow-cookies")))
+  const [cookiesAllowed, setCookiesAllowed] = useState(() => typeof localStorage !== 'undefined' ? Boolean(localStorage.getItem("allow-cookies")) : false)
   const closeDialog = () => {
     setCookiesAllowed(true)
-    localStorage.setItem("allow-cookies", "true");
+    if(typeof localStorage !== 'undefined') {
+      localStorage.setItem("allow-cookies", "true");
+    }
   }
   return (
     <>
