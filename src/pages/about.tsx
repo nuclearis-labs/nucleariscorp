@@ -1,11 +1,14 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, useState } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
+import trajectoryContent from "../content/trajectory.js"
 
 interface Props {}
 
 function About(_props: Props): ReactElement {
+  const [ currenTrajectory, setCurrentTrajectory ] = useState(0)
+
   return (
     <>
       <Header isLanding={false} />
@@ -44,28 +47,29 @@ function About(_props: Props): ReactElement {
                 Trayectoria
               </h2>
               <h3 className="text-2xl mb-4 text-gable tracking-wide">
-                Actualmente
+                {trajectoryContent[currenTrajectory].title}
               </h3>
-              <p className="text-gable sm:pr-10 text-justify">
-                <span className="font-bold">Material Organization.</span>{" "}
-                Actualmente Nuclearis se encuentra en un nuevo proyecto de
-                expansión a partir de la creación de una nueva unidad de
-                negocios denominada Material Organization que nos permitirá
-                posicionarnos como proveedores de materiales de grado nuclear
-                asegurando su calidad y trazabilidad, garantizando que todas las
-                operaciones, procesos y servicios relacionados a la compra,
-                fabricación y provisión de los mismos estén de acuerdo al ASME
-                BPVC, Section III, NCA-3800.
-              </p>
+              <p 
+                className="text-gable sm:pr-10 text-justify"
+                dangerouslySetInnerHTML={{
+                  __html: trajectoryContent[currenTrajectory].text,
+                }}
+              />
               <div className="absolute bottom-5 right-0 sm:right-10">
-                <button className="focus:outline-none">
+                <button 
+                  className="focus:outline-none"
+                  onClick={() => currenTrajectory === 0 ? setCurrentTrajectory(trajectoryContent.length) : setCurrentTrajectory(currenTrajectory - 1)}
+                >
                   <StaticImage
                     src="../images/left-arrow.svg"
                     width={18}
-                    alt="Right Arrow"
+                    alt="Left Arrow"
                   />
                 </button>
-                <button className="focus:outline-none">
+                <button 
+                  className="focus:outline-none"
+                  onClick={() => currenTrajectory === trajectoryContent.length ? setCurrentTrajectory(0) : setCurrentTrajectory(currenTrajectory + 1)}
+                >
                   <StaticImage
                     src="../images/right-arrow.svg"
                     width={18}
