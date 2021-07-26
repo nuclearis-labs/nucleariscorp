@@ -10,11 +10,19 @@ interface Props {}
 function About(_props: Props): ReactElement {
   const [ currenTrajectory, setCurrentTrajectory ] = useState(0)
 
+  function handleTrajectoryBackward() {
+    currenTrajectory === 0 ? setCurrentTrajectory(trajectoryContent.length - 1) : setCurrentTrajectory(currenTrajectory - 1)
+  }
+
+  function handleTrajectoryForward() {
+    currenTrajectory === trajectoryContent.length - 1 ? setCurrentTrajectory(0) : setCurrentTrajectory(currenTrajectory + 1)
+  }
+
   return (
     <>
       <Seo/>
       <Header isLanding={false} />
-      <div className="w-full max-w-6xl m-auto pt-20 px-8">
+      <div className="w-full max-w-5xl m-auto pt-20 px-8">
         <div className="grid grid-cols-12 sm:gap-10">
           <div className="col-span-12 sm:col-span-7 pb-14">
             <h1 className="font-bold text-3xl mb-6 text-gable tracking-wide">
@@ -42,11 +50,11 @@ function About(_props: Props): ReactElement {
         </div>
       </div>
       <div className="w-full bg-pattens-blue">
-        <div className="max-w-6xl m-auto px-8">
+        <div className="max-w-5xl m-auto px-8">
           <div className="grid grid-cols-12 gap-1">
             <div className="col-span-12 sm:col-span-6 pt-7 pb-12 relative">
               <h2 className="font-bold text-3xl mb-1 text-gable tracking-wide">
-                Trayectoria
+                Partners 
               </h2>
               <h3 className="text-2xl mb-4 text-gable tracking-wide">
                 {trajectoryContent[currenTrajectory].title}
@@ -60,7 +68,7 @@ function About(_props: Props): ReactElement {
               <div className="absolute bottom-5 right-0 sm:right-10">
                 <button 
                   className="focus:outline-none"
-                  onClick={() => currenTrajectory === 0 ? setCurrentTrajectory(trajectoryContent.length) : setCurrentTrajectory(currenTrajectory - 1)}
+                  onClick={handleTrajectoryBackward}
                 >
                   <StaticImage
                     src="../images/left-arrow.svg"
@@ -70,7 +78,7 @@ function About(_props: Props): ReactElement {
                 </button>
                 <button 
                   className="focus:outline-none"
-                  onClick={() => currenTrajectory === trajectoryContent.length ? setCurrentTrajectory(0) : setCurrentTrajectory(currenTrajectory + 1)}
+                  onClick={handleTrajectoryForward}
                 >
                   <StaticImage
                     src="../images/right-arrow.svg"
