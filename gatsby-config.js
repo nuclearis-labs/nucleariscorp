@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Nuclearis Corp`,
+    title: `Nuclearis Corporation`,
     description: `Provides engineering solutions and project management to support the nuclear industry.`,
     author: `NuclearisCorp`,
+    url: `https://nucleariscorp.com`,
+    image: `/default.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

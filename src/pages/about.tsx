@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import trajectoryContent from "../content/trajectory.js"
 
@@ -11,6 +12,7 @@ function About(_props: Props): ReactElement {
 
   return (
     <>
+      <Seo/>
       <Header isLanding={false} />
       <div className="w-full max-w-6xl m-auto pt-20 px-8">
         <div className="grid grid-cols-12 sm:gap-10">

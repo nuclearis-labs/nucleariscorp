@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 interface Props {}
@@ -8,6 +9,7 @@ interface Props {}
 function Contact(_props: Props): ReactElement {
   return (
     <>
+      <Seo/>
       <Header isLanding={false} />
       <div className="w-full max-w-5xl m-auto py-20 px-8">
         <div className="grid grid-cols-12 sm:gap-10">

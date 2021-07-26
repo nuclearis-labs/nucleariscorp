@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 import { graphql } from "gatsby"
 import worksContent from "../content/works.js"
 import { StaticImage } from "gatsby-plugin-image"
@@ -49,6 +50,7 @@ function Works(_props: Props): ReactElement {
 
   return (
     <>
+      <Seo/>
       <Header isLanding={false} />
       <div className="w-full max-w-5xl m-auto py-20 px-8">
         <div className="grid grid-cols-12">
