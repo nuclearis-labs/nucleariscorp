@@ -7,7 +7,7 @@ function Footer(_props: Props): ReactElement {
   return (
     <footer>
       <div className="bg-zircon">
-        <div className="w-full max-w-6xl m-auto pt-14 pb-8 px-8">
+        <div className="w-full max-w-5xl m-auto pt-14 pb-8 px-8">
           <a
             href="/"
             className="block text-gable mb-8 text-4xl tracking-wide font-bold"
@@ -19,18 +19,18 @@ function Footer(_props: Props): ReactElement {
               width={150}
             />
           </a>
-          <div className="grid grid-cols-12 gap-20 pb-6 mb-4 border-b border-submarine text-submarine">
-            <div className="mt-auto col-span-5">
+          <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-5 pb-6 mb-4 border-b border-submarine text-submarine text-sm sm:text-base">
+            <div className="mt-auto md:col-span-3 lg:col-span-5">
               <p>7620 Jefferson St NE, Suite 7</p>
               <p>Albuquerque, New Mexico</p>
               <p>USA 87109</p>
             </div>
-            <div className="col-span-4">
+            <div className="md:col-span-2 lg:col-span-4">
               <p>+1 505 365-1123</p>
               <p>info@nuclearis.com</p>
               <p>rrhh@nuclearis.com</p>
             </div>
-            <div className="col-span-3 ml-auto mt-auto">
+            <div className="col-span-2 md:col-span-1 lg:col-span-3 mx-auto md:ml-auto md:mr-0 mt-5 md:mt-auto">
               <a
                 href="https://www.instagram.com/nuclearis.nrs"
                 className="mr-3 inline-block w-6"
@@ -63,7 +63,7 @@ function Footer(_props: Props): ReactElement {
               </a>
             </div>
           </div>
-          <p className="text-submarine">
+          <p className="text-submarine text-sm text-center">
             © 2021. Nuclearis CORP - Todos los derechos reservados.
           </p>
         </div>
