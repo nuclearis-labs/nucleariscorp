@@ -54,16 +54,16 @@ function Works(_props: Props): ReactElement {
       <Header isLanding={false} />
       <div className="w-full max-w-5xl m-auto py-20 px-8">
         <div className="grid grid-cols-12">
-          <h1 className="font-bold col-span-5 text-3xl mb-7 text-gable tracking-wide">
+          <h1 className="font-bold col-span-4 text-3xl mb-7 text-gable tracking-wide">
             Our Work
           </h1>
           {expandedWork && (
-            <div className="text-right col-span-7">
-              <h1 className="inline-block font-normal text-base sm:text-lg md:text-2xl mt-2 text-gable tracking-wide">
+            <div className="text-right col-span-8">
+              <h1 className="hidden sm:inline-block font-normal text-base sm:text-2xl mt-2 text-gable tracking-wide">
                 {expandedWork.title}
               </h1>
               <button
-                className="inline-block ml-4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all"
+                className="inline-block pt-3 sm:pt-0 sm:ml-4 opacity-50 hover:opacity-100 focus:outline-none outline-none transition-all"
                 onClick={() => compressWork()}
               >
                 <StaticImage
@@ -146,6 +146,9 @@ function Works(_props: Props): ReactElement {
               </div>
             </div>
             <div className="block md:hidden col-span-12 text-justify relative">
+              <h1 className="sm:hidden mt-6 font-bold text-xl text-gable tracking-wide">
+                {expandedWork.title}
+              </h1>
               <p
                 className="text-base mt-10 text-gable text-justify font-light"
                 dangerouslySetInnerHTML={{
