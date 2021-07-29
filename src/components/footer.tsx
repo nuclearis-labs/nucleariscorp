@@ -30,7 +30,7 @@ function Footer(_props: Props): ReactElement {
               <p>info@nuclearis.com</p>
               <p>rrhh@nuclearis.com</p>
             </div>
-            <div className="col-span-2 md:col-span-1 lg:col-span-3 mx-auto md:ml-auto md:mr-0 mt-5 md:mt-auto">
+            <div className="hidden col-span-2 md:col-span-1 lg:col-span-3 mx-auto md:ml-auto md:mr-0 mt-5 md:mt-auto">
               <a
                 href="https://www.instagram.com/nuclearis.nrs"
                 className="mr-3 inline-block w-6"
@@ -65,6 +65,13 @@ function Footer(_props: Props): ReactElement {
           </div>
           <p className="text-submarine text-sm text-center">
             © 2021. Nuclearis CORP - Todos los derechos reservados.
+            // Designed by 
+            <a
+              href="https://www.stereotypo.com.ar/"
+              className="ml-1 font-bold text-gable"
+            >
+              Stereotypo
+            </a>
           </p>
         </div>
       </div>

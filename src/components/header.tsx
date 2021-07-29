@@ -108,7 +108,7 @@ const DesktopHeader = (_props: Props): ReactElement => {
                 Contact Us
               </Link>
               {!_props.isLanding && (
-                <div className="hidden md:inline-block">
+                <div className="hidden">
                   <a
                     href="https://www.instagram.com/nuclearis.nrs"
                     target="_blank"
