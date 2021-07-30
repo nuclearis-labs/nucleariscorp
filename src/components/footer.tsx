@@ -63,16 +63,18 @@ function Footer(_props: Props): ReactElement {
             </div>
           </div>
           <p className="text-submarine text-sm text-center">
-            © 2021. Nuclearis Corp - All rights reserved.
-            // Designed by 
-            <a
-              href="https://www.stereotypo.com.ar/"
-              target="_blank"
-              className="ml-1 font-bold text-gable"
-            >
-              Stereotypo
-            </a>
+              &copy; 2021. Nuclearis Corp - All rights reserved.
+              {` //`} Designed by
+              <a
+                href="https://www.stereotypo.com.ar/"
+                target="_blank"
+                rel="noreferrer"
+                className="ml-1 font-bold text-gable"
+              >
+                Stereotypo
+              </a>
           </p>
+          
         </div>
       </div>
     </footer>
