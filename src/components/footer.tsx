@@ -26,9 +26,8 @@ function Footer(_props: Props): ReactElement {
               <p>USA 87109</p>
             </div>
             <div className="md:col-span-2 lg:col-span-4">
-              <p>+1 505 365-1123</p>
-              <p>info@nuclearis.com</p>
-              <p>rrhh@nuclearis.com</p>
+              <p>+1 505 926 1022</p>
+              <p>sales@nuclearis.com</p>
             </div>
             <div className="hidden col-span-2 md:col-span-1 lg:col-span-3 mx-auto md:ml-auto md:mr-0 mt-5 md:mt-auto">
               <a
@@ -64,7 +63,7 @@ function Footer(_props: Props): ReactElement {
             </div>
           </div>
           <p className="text-submarine text-sm text-center">
-            © 2021. Nuclearis CORP - Todos los derechos reservados.
+            © 2021. Nuclearis Corp - All rights reserved.
             // Designed by 
             <a
               href="https://www.stereotypo.com.ar/"
