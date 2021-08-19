@@ -21,39 +21,12 @@ function Services(_props: Props): ReactElement {
               We have a solid background providing support to nuclear facilities
               including nuclear power plants, SMR and Laboratories.
             </h1>
-            <p className="pr-40 mb-7 text-justify">Our expertise covers:</p>
-            <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
-              ENGINEERING
-            </h1>
-            <p className="mb-6 pr-20 text-justify">
-              1. Basic and detailed engineering
-            </p>
+            <p className="text-gable md:text-justify mb-4">We have a solid background providing support to nuclear facilities including nuclear power plants, SMR and Laboratories.</p>
 
-            <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
-              FABRICATION
-            </h1>
-            <p className="mb-2 pr-20 text-justify">
-              2. Manufacture of special mechanical components
-            </p>
-            <p className="mb-2 pr-20 text-justify">
-              3. Electroplating / Special Coatings
-            </p>
-            <p className="mb-6 pr-20 text-justify">
-              4. Full-scale mechanical mockups
-            </p>
+            <p className="text-gable md:text-justify mb-4">Our expertise covers basic and detailed engineering, manufacturing of special mechanical components, electroplating, special coating and full-scope mechanical mockups. We also have extensive experience in equipment automation.</p>
 
-            <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
-              FABRICATION
-            </h1>
-            <p className="mb-6 pr-20 text-justify">5. Equipment automation</p>
+            <p className="text-gable md:text-justify mb-4">Nuclearis is committed to providing tailored support services to your operations, thus our services include full project management that covers design, fabrication, equipment installation and commissioning.</p>
 
-            <h1 className="font-bold text-2xl mb-1 text-gable tracking-wide">
-              PROJECT MANAGEMENT
-            </h1>
-            <p className="mb-6 pr-20 text-justify">
-              6. Design, fabrication and equipment installation of special
-              mechanical components
-            </p>
           </div>
           <div className="col-span-4 hidden sm:block">
             <StaticImage src="../images/services.jpg" alt="Services" />

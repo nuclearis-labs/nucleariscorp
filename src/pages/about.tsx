@@ -2,20 +2,23 @@ import React, { ReactElement, useState } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Seo from "../components/seo"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import trajectoryContent from "../content/trajectory.js"
+import partnersContent from "../content/partners.js"
 
-interface Props {}
+interface Props {
+  data: any
+}
 
 function About(_props: Props): ReactElement {
   const [ currenTrajectory, setCurrentTrajectory ] = useState(0)
 
   function handleTrajectoryBackward() {
-    currenTrajectory === 0 ? setCurrentTrajectory(trajectoryContent.length - 1) : setCurrentTrajectory(currenTrajectory - 1)
+    currenTrajectory === 0 ? setCurrentTrajectory(partnersContent.length - 1) : setCurrentTrajectory(currenTrajectory - 1)
   }
 
   function handleTrajectoryForward() {
-    currenTrajectory === trajectoryContent.length - 1 ? setCurrentTrajectory(0) : setCurrentTrajectory(currenTrajectory + 1)
+    currenTrajectory === partnersContent.length - 1 ? setCurrentTrajectory(0) : setCurrentTrajectory(currenTrajectory + 1)
   }
 
   return (
@@ -32,7 +35,7 @@ function About(_props: Props): ReactElement {
               Nuclearis Corp is a US company established in 2018 in Albuquerque,
               New Mexico.
             </h2>
-            <p className="text-gable text-justify mb-4">
+            <p className="text-gable md:text-justify mb-4">
               We deliver engineered turnkey solutions to support nuclear
               utilities and laboratories for both plant operations and
               refurbishment projects. The company has a solid professional young
@@ -40,7 +43,7 @@ function About(_props: Props): ReactElement {
               and manufacturing of mechanical components and devices for the
               nuclear industry.
             </p>
-            <p className="text-gable text-justify">
+            <p className="text-gable md:text-justify">
               We are passionate about complex technology challenges and we
               approach them with professionalism to deliver state of the art
               solutions for our customers.
@@ -57,12 +60,12 @@ function About(_props: Props): ReactElement {
                 Partners 
               </h2>
               <h3 className="text-2xl mb-4 text-gable tracking-wide">
-                {trajectoryContent[currenTrajectory].title}
+                {partnersContent[currenTrajectory].title}
               </h3>
               <p 
                 className="text-gable sm:pr-10 text-justify"
                 dangerouslySetInnerHTML={{
-                  __html: trajectoryContent[currenTrajectory].text,
+                  __html: partnersContent[currenTrajectory].text,
                 }}
               />
               <div className="absolute bottom-5 right-0 sm:right-10">
@@ -88,7 +91,8 @@ function About(_props: Props): ReactElement {
                 </button>
               </div>
             </div>
-            <div className="sm:col-span-6 about-us hidden sm:block"></div>
+            <div className="sm:col-span-6 about-us hidden sm:block" style={{backgroundImage: "url(" + _props.data[partnersContent[currenTrajectory].id].edges[0].node
+                    .childImageSharp.fluid.src + ")"}}></div>
           </div>
         </div>
       </div>
@@ -98,3 +102,32 @@ function About(_props: Props): ReactElement {
 }
 
 export default About
+
+export const pageQuery = graphql`
+  {
+    partner_1: allFile(filter: { relativeDirectory: { eq: "partners/partner_1" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+    partner_2: allFile(filter: { relativeDirectory: { eq: "partners/partner_2" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+  }
+`
