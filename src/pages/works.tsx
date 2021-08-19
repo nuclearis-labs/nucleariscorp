@@ -19,6 +19,7 @@ type Work = {
 }
 
 function Works(_props: Props): ReactElement {
+  console.log(_props);
   const [expandedWork, setExpandedWork] = useState<Work | null>(null)
   const [workSlide, setWorkSlide] = useState(1)
   const [showAllText, setShowAllText] = useState(false)
@@ -85,7 +86,7 @@ function Works(_props: Props): ReactElement {
                 className="w-full"
                 src={
                   _props.data[expandedWork.id].edges[workSlide].node
-                    .childImageSharp.fluid.src
+                    .childImageSharp.fluid.srcWebp
                 }
                 alt={expandedWork.shortText}
               />
