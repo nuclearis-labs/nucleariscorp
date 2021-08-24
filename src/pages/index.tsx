@@ -56,7 +56,7 @@ export const pageQuery = graphql`
       publicURL
     }
     videoPoster: file(
-      relativePath: { eq: "services.jpg" }
+      relativePath: { eq: "poster.png" }
       sourceInstanceName: { eq: "images" }
     ) {
       publicURL
