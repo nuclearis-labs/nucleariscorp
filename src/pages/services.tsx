@@ -12,12 +12,12 @@ function Services(_props: Props): ReactElement {
       <Seo/>
       <Header isLanding={false} />
       <div className="w-full max-w-5xl m-auto py-20 px-8">
-        <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-12 sm:col-span-8">
+        <div className="sm:grid sm:grid-cols-12 sm:gap-10">
+          <div className="sm:col-span-8 box-border">
             <h1 className="font-bold text-3xl mb-7 text-gable tracking-wide">
               Services
             </h1>
-            <h1 className="font-bold text-4xl mb-7 pr-32 text-gable tracking-wide">
+            <h1 className="font-bold text-4xl mb-7 sm:pr-32 text-gable tracking-wide">
               We have a solid background providing support to nuclear facilities
               including nuclear power plants, SMR and Laboratories.
             </h1>
