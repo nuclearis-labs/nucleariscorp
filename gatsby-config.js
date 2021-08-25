@@ -4,7 +4,7 @@ module.exports = {
     description: `Provides engineering solutions and project management to support the nuclear industry.`,
     author: `NuclearisCorp`,
     url: `https://nucleariscorp.com`,
-    image: `/default.jpg`
+    image: `docs/default.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
