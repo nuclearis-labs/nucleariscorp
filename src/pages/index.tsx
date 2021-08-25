@@ -12,9 +12,10 @@ interface Props {
 function Index(_props: Props): ReactElement {
   const videoMP4 = _props.data.videoMP4.publicURL
   const videoPoster = _props.data.videoPoster.publicURL
+  const seoImage = _props.data.seoImage.publicURL
   return (
     <>
-      <Seo/>
+      <Seo image={seoImage}/>
       <Header isLanding={true} />
       <video playsInline autoPlay muted loop poster={videoPoster} id="bgvid">
         <source src={videoMP4} type="video/mp4" />
@@ -57,6 +58,12 @@ export const pageQuery = graphql`
     }
     videoPoster: file(
       relativePath: { eq: "poster.png" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      publicURL
+    }
+    seoImage: file(
+      relativePath: { eq: "seo.jpg" }
       sourceInstanceName: { eq: "images" }
     ) {
       publicURL

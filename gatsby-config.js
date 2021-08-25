@@ -3,8 +3,7 @@ module.exports = {
     title: `Nuclearis Corporation`,
     description: `Provides engineering solutions and project management to support the nuclear industry.`,
     author: `NuclearisCorp`,
-    url: `https://nucleariscorp.com`,
-    image: `docs/default.jpg`
+    url: `https://nucleariscorp.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
