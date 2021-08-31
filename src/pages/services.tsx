@@ -21,7 +21,6 @@ function Services(_props: Props): ReactElement {
               We have a solid background providing support to nuclear facilities
               including nuclear power plants, SMR and Laboratories.
             </h1>
-            <p className="text-gable md:text-justify mb-4">We have a solid background providing support to nuclear facilities including nuclear power plants, SMR and Laboratories.</p>
 
             <p className="text-gable md:text-justify mb-4">Our expertise covers basic and detailed engineering, manufacturing of special mechanical components, electroplating, special coating and full-scope mechanical mockups. We also have extensive experience in equipment automation.</p>
 
