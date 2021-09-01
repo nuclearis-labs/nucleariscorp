@@ -70,7 +70,7 @@ function About(_props: Props): ReactElement {
               />
               <div className="absolute bottom-5 right-0 sm:right-10">
                 <button 
-                  className="focus:outline-none"
+                  className={`focus:outline-none ${currenTrajectory === 0 ? "hidden" : ""}`}
                   onClick={handleTrajectoryBackward}
                 >
                   <StaticImage
@@ -80,7 +80,7 @@ function About(_props: Props): ReactElement {
                   />
                 </button>
                 <button 
-                  className="focus:outline-none"
+                  className={`focus:outline-none ${currenTrajectory === partnersContent.length - 1 ? "hidden" : ""}`}
                   onClick={handleTrajectoryForward}
                 >
                   <StaticImage
