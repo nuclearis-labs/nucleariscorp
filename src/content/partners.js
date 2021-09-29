@@ -7,7 +7,7 @@ const partnersContent = [
     {
         id: "partner_2",
         title: "Continental Machining Company",
-        text: "Continental Machining Company offers precision machining services. The Company provides solutions including design, prototype, welding, fabrication, CNC milling, and other related services. Continental Machining serves customers in the United States.",
+        text: "Continental Machining Company offers precision machining services. The Company provides solutions including assembly, prototype, welding, fabrication, CNC milling, and other related services. Continental Machining serves customers in the United States DOD and DOE.",
     },
   ]
   
